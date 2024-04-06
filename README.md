@@ -3,6 +3,10 @@ chimbalix-snapshot
 
 Program for creating a live-CD from Chimbalix Linux running system
 
+chimbalix-snapshot based on mx-snapshot, original project:
+
+https://github.com/MX-Linux/mx-snapshot
+
 JUST TO CLARIFY, this program is meant for MX Linux and antiX it won't work on another other system without considerable modifications because other systems don't have the infrastructure needed to run this program. Don't try to install the deb it won't work and might ruin your system.
 
 # SYNOPSIS
