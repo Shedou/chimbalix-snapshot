@@ -1,0 +1,2 @@
+ln -fs /etc/chimbalix-snapshot-exclude.list /usr/local/share/excludes/chimbalix-snapshot-exclude.list
+gtk-update-icon-cache -f /usr/share/icons/hicolor

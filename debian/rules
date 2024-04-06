@@ -12,17 +12,17 @@ override_dh_auto_clean:
 	rm -f src/translations/*.qm
 
 override_dh_auto_configure:
-	dh_auto_configure -- mx-snapshot.pro
+	dh_auto_configure -- chimbalix-snapshot.pro
 
 override_dh_auto_build:
 	lrelease translations/*.ts
 	mv version.h version.h~
 	echo "const QString VERSION {\"$(DEB_BUILD_VERSION)\"};" > version.h
-	gzip -kf manual/mx-snapshot.8
+	gzip -kf manual/chimbalix-snapshot.8
 	gzip -kf manual/iso-snapshot-cli.8
-	# build mx-snapshot
+	# build chimbalix-snapshot
 	dh_auto_build
-	mv mx-snapshot mx-snapshot-binary
+	mv chimbalix-snapshot chimbalix-snapshot-binary
 	# clean, reconfigure, and build iso-snapshot-cli
 	mv version.h~ version.h
 	dh_auto_clean
@@ -31,8 +31,8 @@ override_dh_auto_build:
 	dh_auto_configure -- iso-snapshot-cli.pro
 	dh_auto_build
 	# before installing move binary back and make a iso-snapshot-cli copy of .list file
-	mv mx-snapshot-binary mx-snapshot
-	cp mx-snapshot-exclude.list iso-snapshot-cli-exclude.list
+	mv chimbalix-snapshot-binary chimbalix-snapshot
+	cp chimbalix-snapshot-exclude.list iso-snapshot-cli-exclude.list
 
 override_dh_shlibdeps:
 	dh_shlibdeps -- -xvirtualbox-guest-x11 --ignore-missing-info

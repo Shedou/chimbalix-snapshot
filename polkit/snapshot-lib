@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# Root level functions requiring password for mx-snapshot
+# Root level functions requiring password for chimbalix-snapshot
 
 cleanup() {
     /usr/sbin/installed-to-live cleanup
 }
 
 copy_log() {
-    [[ -f /var/log/mx-snapshot.log ]] && mv /var/log/mx-snapshot.log /var/log/mx-snapshot.log.old
-    cp /tmp/mx-snapshot.log /var/log
+    [[ -f /var/log/chimbalix-snapshot.log ]] && mv /var/log/chimbalix-snapshot.log /var/log/chimbalix-snapshot.log.old
+    cp /tmp/chimbalix-snapshot.log /var/log
 }
 
 datetime_log() {

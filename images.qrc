@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>icons/logo.svg</file>
+        <file>icons/chimbalix-snapshot.png</file>
     </qresource>
 </RCC>

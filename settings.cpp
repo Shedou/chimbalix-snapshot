@@ -105,7 +105,7 @@ bool Settings::checkTempDir()
     if (tempdir_parent == "/home") { // Replace /home with user home path
         tempdir_parent = "/home/" + Cmd().getOut("logname", true).trimmed();
     }
-    tmpdir.reset(new QTemporaryDir(tempdir_parent + "/mx-snapshot-XXXXXXXX"));
+    tmpdir.reset(new QTemporaryDir(tempdir_parent + "/chimbalix-snapshot-XXXXXXXX"));
     if (!tmpdir->isValid()) {
         qDebug() << QObject::tr("Could not create temp directory. ") + tmpdir.data()->path();
         return false;

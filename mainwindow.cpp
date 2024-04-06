@@ -168,7 +168,7 @@ void MainWindow::setup()
     ui->outputBox->setFont(font);
     ui->outputBox->setReadOnly(true);
 
-    setWindowTitle(tr("MX Snapshot"));
+    setWindowTitle(tr("Chimbalix Snapshot"));
     ui->btnBack->setHidden(true);
     ui->stackedWidget->setCurrentIndex(0);
     ui->btnCancel->setEnabled(true);
@@ -466,7 +466,7 @@ void MainWindow::btnSelectKernel_clicked()
 
 void MainWindow::btnBack_clicked()
 {
-    setWindowTitle(tr("MX Snapshot"));
+    setWindowTitle(tr("Chimbalix Snapshot"));
     ui->stackedWidget->setCurrentIndex(0);
     ui->btnNext->setEnabled(true);
     ui->btnBack->setHidden(true);
@@ -545,10 +545,10 @@ void MainWindow::btnAbout_clicked()
         tr("About %1").arg(QApplication::applicationDisplayName()),
         "<p align=\"center\"><b><h2>" + QApplication::applicationDisplayName() + "</h2></b></p><p align=\"center\">"
             + tr("Version: ") + QApplication::applicationVersion() + "</p><p align=\"center\"><h3>"
-            + tr("Program for creating a live-CD from the running system for MX Linux")
-            + R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)"
-            + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        QStringLiteral("/usr/share/doc/mx-snapshot/license.html"),
+            + tr("Program for creating a live-CD from the running system for Chimbalix Linux")
+            + R"(</h3></p><p align="center"><a href="https://github.com/Shedou/Chimbalix">https://github.com/Shedou/Chimbalix</a><br /></p><p align="center">)"
+            + tr("Copyright (c) Chimbalix Linux") + "<br /><br /></p>",
+        QStringLiteral("/usr/share/doc/chimbalix-snapshot/license.html"),
         tr("%1 License").arg(QApplication::applicationDisplayName()));
     show();
 }
@@ -558,7 +558,7 @@ void MainWindow::btnHelp_clicked()
     QLocale locale;
     QString lang = locale.bcp47Name();
 
-    QString url {"/usr/share/doc/mx-snapshot/mx-snapshot.html"};
+    QString url {"/usr/share/doc/chimbalix-snapshot/chimbalix-snapshot.html"};
 
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/french-wiki/help-files-fr/help-mx-instantane";

@@ -174,8 +174,8 @@ else
 {
     QApplication app(argc, argv);
     QApplication::setApplicationVersion(VERSION);
-    QApplication::setOrganizationName("MX-Linux");
-    QApplication::setApplicationDisplayName(QObject::tr("MX Snapshot"));
+    QApplication::setOrganizationName("CL-Linux");
+    QApplication::setApplicationDisplayName(QObject::tr("Chimbalix Snapshot"));
     parser.process(app);
     setTranslation();
     checkSquashfs();
@@ -226,7 +226,7 @@ void setTranslation()
         QCoreApplication::installTranslator(&qtBaseTran);
     }
 
-    if (appTran.load("mx-snapshot_" + QLocale().name(),
+    if (appTran.load("chimbalix-snapshot_" + QLocale().name(),
                      "/usr/share/" + QCoreApplication::applicationName() + "/locale")) {
         QCoreApplication::installTranslator(&appTran);
     }

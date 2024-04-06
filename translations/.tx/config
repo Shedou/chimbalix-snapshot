@@ -1,9 +1,9 @@
 [main]
 host = https://www.transifex.com
 
-[o:anticapitalista:p:antix-development:r:mx-snapshot]
-file_filter = ./mx-snapshot_<lang>.ts
-source_file = mx-snapshot_en.ts
+[o:anticapitalista:p:antix-development:r:chimbalix-snapshot]
+file_filter = ./chimbalix-snapshot_<lang>.ts
+source_file = chimbalix-snapshot_en.ts
 source_lang = en
 type = ts
 minimum_perc = 25

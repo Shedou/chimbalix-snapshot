@@ -283,9 +283,9 @@ bool Work::createIso(const QString &filename)
         cleanUp();
     }
     emit messageBox(BoxType::information, tr("Success"),
-                    tr("MX Snapshot completed sucessfully!") + '\n'
+                    tr("Chimbalix Snapshot completed sucessfully!") + '\n'
                         + tr("Snapshot took %1 to finish.").arg(elapsedTime.toString("hh:mm:ss")) + "\n\n"
-                        + tr("Thanks for using MX Snapshot, run MX Live USB Maker next!"));
+                        + tr("Thanks for using Chimbalix Snapshot, run MX Live USB Maker next!"));
     done = true;
     return true;
 }
@@ -421,7 +421,7 @@ void Work::setupEnv()
 {
     qDebug() << "+++" << __PRETTY_FUNCTION__ << "+++";
     // Checks if work_dir looks OK
-    if (!settings->work_dir.contains("/mx-snapshot")) {
+    if (!settings->work_dir.contains("/chimbalix-snapshot")) {
         cleanUp();
     }
 
@@ -433,9 +433,9 @@ void Work::setupEnv()
     }
 
     // Install mx-installer if absent
-    if (settings->force_installer && !checkInstalled("mx-installer")) {
-        installPackage("mx-installer");
-    }
+    //if (settings->force_installer && !checkInstalled("mx-installer")) {
+    //    installPackage("mx-installer");
+    //}
 
     writeSnapshotInfo();
     writeVersionFile();
@@ -453,7 +453,7 @@ void Work::setupEnv()
 
 void Work::writeLsbRelease()
 {
-    QFile file("/usr/local/share/live-files/files/etc/lsb-release");
+    QFile file("/etc/lsb-release");
     if (!file.open(QFile::WriteOnly | QFile::Truncate)) {
         return;
     }
@@ -477,7 +477,7 @@ void Work::writeSnapshotInfo()
 
 void Work::writeVersionFile()
 {
-    QFile file("/usr/local/share/live-files/files/etc/mx-version");
+    QFile file("/etc/mx-version");
     if (!file.open(QFile::WriteOnly | QFile::Truncate)) {
         return;
     }

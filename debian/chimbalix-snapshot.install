@@ -1,0 +1,12 @@
+docs/*								usr/share/doc/chimbalix-snapshot
+manual/chimbalix-snapshot.8.gz		usr/share/man/man8
+chimbalix-snapshot					usr/bin
+chimbalix-snapshot-exclude.list		etc
+chimbalix-snapshot.conf				etc
+chimbalix-snapshot.desktop			usr/share/applications
+polkit/*chimbalix-snapshot*.policy	usr/share/polkit-1/actions
+polkit/helper						usr/lib/chimbalix-snapshot
+polkit/snapshot-lib					usr/lib/chimbalix-snapshot
+scripts/*							usr/share/chimbalix-snapshot/scripts
+translations/*.qm					usr/share/chimbalix-snapshot/locale
+icons/*								usr/share/icons/hicolor/48x48/apps

@@ -1,5 +1,5 @@
 # **********************************************************************
-# * Copyright (C) 2015 MX Authors
+# * Copyright (C) 2015-2024 MX Authors
 # *
 # * Authors: Adrian
 # *          MX Linux <http://mxlinux.org>
@@ -20,14 +20,10 @@
 # * along with MX Tools.  If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************
 
-DEFINES += "CLI_BUILD=1"
-
-QT       += core
-QT       -= gui
-
+QT       += core gui widgets
 CONFIG   += c++1z
 
-TARGET = iso-snapshot-cli
+TARGET = chimbalix-snapshot
 TEMPLATE = app
 
 # The following define makes your compiler warn you if you use any
@@ -39,6 +35,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     log.cpp \
     main.cpp \
+    mainwindow.cpp \
+    about.cpp \
     cmd.cpp \
     settings.cpp \
     batchprocessing.cpp \
@@ -47,11 +45,15 @@ SOURCES += \
 HEADERS  += \
     common.h \
     log.h \
-    version.h \
+    mainwindow.h \
+    about.h \
     cmd.h \
     settings.h \
     batchprocessing.h \
     work.h
+
+FORMS    += \
+    mainwindow.ui
 
 TRANSLATIONS += \
     translations/chimbalix-snapshot_en.ts
