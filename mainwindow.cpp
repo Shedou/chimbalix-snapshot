@@ -545,9 +545,9 @@ void MainWindow::btnAbout_clicked()
         tr("About %1").arg(QApplication::applicationDisplayName()),
         "<p align=\"center\"><b><h2>" + QApplication::applicationDisplayName() + "</h2></b></p><p align=\"center\">"
             + tr("Version: ") + QApplication::applicationVersion() + "</p><p align=\"center\"><h3>"
-            + tr("Program for creating a live-CD from the running system for Chimbalix Linux")
+            + tr("Program for creating a live-CD from the running system for Chimbalix")
             + R"(</h3></p><p align="center"><a href="https://github.com/Shedou/Chimbalix">https://github.com/Shedou/Chimbalix</a><br /></p><p align="center">)"
-            + tr("Copyright (c) Chimbalix Linux") + "<br /><br /></p>",
+            + tr("Copyright (c) Chimbalix") + "<br /><br /></p>",
         QStringLiteral("/usr/share/doc/chimbalix-snapshot/license.html"),
         tr("%1 License").arg(QApplication::applicationDisplayName()));
     show();

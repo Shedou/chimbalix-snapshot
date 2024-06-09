@@ -156,8 +156,8 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="563"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This option will reset &amp;quot;demo&amp;quot; and &amp;quot;root&amp;quot; passwords to the Chimbalix Linux defaults and will not copy any personal accounts created.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Эта опция сбросит &amp;quot;demo&amp;quot; и &amp;quot;root&amp;quot; пароли Chimbalix Linux по умолчанию и не будет копировать какие-либо созданные персональные учетные записи.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This option will reset &amp;quot;demo&amp;quot; and &amp;quot;root&amp;quot; passwords to the Chimbalix defaults and will not copy any personal accounts created.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Эта опция сбросит &amp;quot;demo&amp;quot; и &amp;quot;root&amp;quot; пароли Chimbalix по умолчанию и не будет копировать какие-либо созданные персональные учетные записи.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="566"/>
@@ -431,13 +431,13 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="548"/>
-        <source>Program for creating a live-CD from the running system for Chimbalix Linux</source>
-        <translation>Программа для создания live-CD из работающей системы для Chimbalix Linux</translation>
+        <source>Program for creating a live-CD from the running system for Chimbalix</source>
+        <translation>Программа для создания live-CD из работающей системы для Chimbalix</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="550"/>
-        <source>Copyright (c) Chimbalix Linux</source>
-        <translation>Copyright (c) Chimbalix Linux</translation>
+        <source>Copyright (c) Chimbalix</source>
+        <translation>Copyright (c) Chimbalix</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="552"/>

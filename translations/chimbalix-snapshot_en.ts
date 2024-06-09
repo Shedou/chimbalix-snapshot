@@ -156,7 +156,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="563"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This option will reset &amp;quot;demo&amp;quot; and &amp;quot;root&amp;quot; passwords to the Chimbalix Linux defaults and will not copy any personal accounts created.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This option will reset &amp;quot;demo&amp;quot; and &amp;quot;root&amp;quot; passwords to the Chimbalix defaults and will not copy any personal accounts created.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -427,12 +427,12 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="548"/>
-        <source>Program for creating a live-CD from the running system for Chimbalix Linux</source>
+        <source>Program for creating a live-CD from the running system for Chimbalix</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="550"/>
-        <source>Copyright (c) Chimbalix Linux</source>
+        <source>Copyright (c) Chimbalix</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

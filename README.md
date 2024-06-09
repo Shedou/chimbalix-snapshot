@@ -1,7 +1,7 @@
 chimbalix-snapshot
 ===================
 
-Program for creating a live-CD from Chimbalix Linux running system
+Program for creating a live-CD from Chimbalix running system
 
 chimbalix-snapshot based on mx-snapshot, original project:
 
