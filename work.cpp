@@ -250,7 +250,7 @@ bool Work::createIso(const QString &filename)
 
     // Create the iso file
     QDir::setCurrent(settings->work_dir + "/iso-template");
-    cmd = "xorriso -as mkisofs -l -V MXLIVE -R -J -pad -iso-level 3 -no-emul-boot -boot-load-size 4 -boot-info-table "
+    cmd = "xorriso -as mkisofs -l -V ChimbalixLive -R -J -pad -iso-level 3 -no-emul-boot -boot-load-size 4 -boot-info-table "
           "-b boot/isolinux/isolinux.bin -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -c "
           "boot/isolinux/isolinux.cat -o \""
           + settings->snapshot_dir + "/" + filename + "\" . \"" + settings->work_dir + "/iso-2\"";
@@ -437,8 +437,8 @@ void Work::setupEnv()
     //    installPackage("mx-installer");
     //}
 
-    writeSnapshotInfo();
-    writeVersionFile();
+    //writeSnapshotInfo();
+    //writeVersionFile();
     writeLsbRelease();
 
     // Setup environment if creating a respin (reset root/demo, remove personal accounts)
