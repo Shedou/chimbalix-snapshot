@@ -1,3 +1,10 @@
+chimbalix-snapshot (1.1) cl; urgency=medium
+
+  * Change ISO Name
+  * Unnecessary functions are disabled
+
+ -- Chimbal <chimbalix@gmail.com>  Wed, 11 Sep 2024 20:34:00 +0400
+
 chimbalix-snapshot (1.0) cl; urgency=medium
 
   * The project has been renamed to avoid name conflicts with the original project "mx-snapshot"
